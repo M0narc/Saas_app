@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'base/css.html' %}
+
     <title>{% block head_title %}SaaS {% endblock head_title %}</title>
 </head>
 <body>
-    <h1>{{ page_title }}</h1>
+    {% include 'nav/navbar.html' %}
+    {% block content %}
+    {% endblock content %}
+    
 
-    <p>Page Visits: {{ page_visit_count }}</p>
-    <p>Total visit count: {{ total_visit_count }}</p>
+    {% include 'base/js.html' %}
 
 </body>
 </html>
