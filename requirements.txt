@@ -1,3 +1,4 @@
 # don't want to update beyond this before the proyect is finished
 Django>=5.0, <5.2
 gunicorn
+python-decouple
