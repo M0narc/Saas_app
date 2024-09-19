@@ -11,13 +11,13 @@ for the .env
 and creating new django secret keys, if you want to change it every month.
 
 also for .env
-https://console.neon.tech/app/projects
+`https://console.neon.tech/app/projects`
 you can get the connection string there...
 
 # dotenv
-DJANGO_DEBUG=
-DJANGO_SECRET_KEY=''
-DATABASE_URL=""
+DJANGO_DEBUG= 0 o 1 # modify in railway
+DJANGO_SECRET_KEY='' # line 7
+DATABASE_URL="" # line 14
 
 # goal
 to learn how to create a reusable SaaS fundation
