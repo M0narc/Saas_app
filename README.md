@@ -20,9 +20,14 @@ DJANGO_SECRET_KEY='' # line 7
 DATABASE_URL="" # line 14
 
 # Frotend
-- CDN (for prototyping this)
+- Vendor CDN (Content delivery network for prototyping this)
 - TailwindCSS
 - Flowbite
+- Create the staticfiles/vendors folders and put the min.css there and min.js
+- after that configure your settings.py file
+- then do `python manage.py collectstatic` in the src folder
+- do NOT forget to add the paths to your `local-cdn` and `staticfiles/vendor`
+  to your `.gitignore`
 
 # goal
 - to learn how to create a reusable SaaS fundation
