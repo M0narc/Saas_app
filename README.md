@@ -19,11 +19,18 @@ DJANGO_DEBUG= 0 o 1 # modify in railway
 DJANGO_SECRET_KEY='' # line 7
 DATABASE_URL="" # line 14
 
+# Frotend
+- CDN (for prototyping this)
+- TailwindCSS
+- Flowbite
+
 # goal
-to learn how to create a reusable SaaS fundation
+- to learn how to create a reusable SaaS fundation
 
 # to create inside the folder you are in.
-django-admin startproject cfehome .
+- django-admin startproject cfehome.
 
 # TODO
- read about context processors
+ - read about context processors
+
+ - install Tailwind and Flowbite using NPM, removing the CDN imports
