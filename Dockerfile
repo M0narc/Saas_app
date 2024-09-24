@@ -50,6 +50,7 @@ RUN pip install -r /tmp/requirements.txt
 # such as:
 RUN python manage.py vendor_static_pull
 RUN python manage.py collectstatic --noinput
+# whitenoise -> later migrate to s3
 
 # set the Django default project name
 ARG PROJ_NAME="cfehome"

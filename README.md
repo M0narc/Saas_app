@@ -32,6 +32,9 @@ DATABASE_URL="" # line 14
 # django commands
   - Why do we use a django manage.py command and not just a python module? well, as soon as you make it a command, you have access to everything inside settings.py.
 
+# MUST RUN
+  - python manage.py vendor_static_pull
+  
 # goal
 - to learn how to create a reusable SaaS fundation
 
