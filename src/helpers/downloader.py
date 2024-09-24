@@ -5,8 +5,7 @@ def download_to_local(url:str,
                       destination_path:Path, 
                       parent_mkdir:bool=True):
     if not isinstance(destination_path, Path):
-        raise ValueError(f"{destination_path} must be a valid pathlib
-                          path object")
+        raise ValueError(f"{destination_path} must be a valid pathlib path object")
     if parent_mkdir:
         destination_path.parent.mkdir(parents=True, exist_ok=True)
     try:

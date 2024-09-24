@@ -29,6 +29,9 @@ DATABASE_URL="" # line 14
 - do NOT forget to add the paths to your `local-cdn` and `staticfiles/vendor`
   to your `.gitignore`
 
+# django commands
+  - Why do we use a django manage.py command and not just a python module? well, as soon as you make it a command, you have access to everything inside settings.py.
+
 # goal
 - to learn how to create a reusable SaaS fundation
 
@@ -39,3 +42,5 @@ DATABASE_URL="" # line 14
  - read about context processors
 
  - install Tailwind and Flowbite using NPM, removing the CDN imports
+
+ - make VENDOR_STATICFILES in management a .json some other time. this is a 1 point
