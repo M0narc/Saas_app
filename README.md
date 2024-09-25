@@ -50,4 +50,5 @@ DATABASE_URL="" # line 14
 
  - make VENDOR_STATICFILES in management a .json some other time. this is a 1 point
 
- - change whitenoise for Django-storage or S3
+ - change whitenoise for Django-storage or S3  (after further research I might have to switch it to django-storage)
+   Might look for D-S on dropbox since it sounds funny, no realiable, but funny.
