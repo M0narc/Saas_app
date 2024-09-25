@@ -23,17 +23,18 @@ DATABASE_URL="" # line 14
 - Vendor CDN (Content delivery network for prototyping this)
 - TailwindCSS
 - Flowbite
-- Create the staticfiles/vendors folders and put the min.css there and min.js
+- Create the staticfiles/vendors folders and put the min.css there and min.js (or run the `python manage.py vendor_static_pull` command)
 - after that configure your settings.py file
 - then do `python manage.py collectstatic` in the src folder
 - do NOT forget to add the paths to your `local-cdn` and `staticfiles/vendor`
-  to your `.gitignore`
+  to your `.gitignore` if for some reason you didn' pull it in the git clone of this repo.
 
 # django commands
   - Why do we use a django manage.py command and not just a python module? well, as soon as you make it a command, you have access to everything inside settings.py.
 
 # MUST RUN
   - python manage.py vendor_static_pull
+  - python manage.py collectstatic (read Frontend section)
   
 # goal
 - to learn how to create a reusable SaaS fundation
