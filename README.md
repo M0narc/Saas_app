@@ -28,6 +28,7 @@ DATABASE_URL="" # line 14
 - then do `python manage.py collectstatic` in the src folder
 - do NOT forget to add the paths to your `local-cdn` and `staticfiles/vendor`
   to your `.gitignore` if for some reason you didn' pull it in the git clone of this repo.
+- Whitenoise for content storage for prod, at least short term.
 
 # django commands
   - Why do we use a django manage.py command and not just a python module? well, as soon as you make it a command, you have access to everything inside settings.py.
@@ -48,3 +49,5 @@ DATABASE_URL="" # line 14
  - install Tailwind and Flowbite using NPM, removing the CDN imports
 
  - make VENDOR_STATICFILES in management a .json some other time. this is a 1 point
+
+ - change whitenoise for Django-storage or S3

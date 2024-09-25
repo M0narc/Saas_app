@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -147,6 +148,18 @@ STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / "vendors"
 STATICFILES_DIRS =[
     STATICFILES_BASE_DIR
 ]
+
+# Whitenoise static file storage settings
+STORAGES = {
+    'staticfiles': {
+        'BACKEND': 'whitenoise.storage.CompressedManifestStaticFilesStorage',
+    },
+}
+
+# Whitenoise settings
+WHITENOISE_USE_FINDERS = True
+# WHITENOISE_AUTOREFRESH = True  # Useful during development
+WHITENOISE_MAX_AGE = 15778476  # Cache for six months
 
 # output for python manage.py collectstatic
 # local cdn -> (to be the prod cdn)
