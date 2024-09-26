@@ -31,12 +31,10 @@ MANAGERS=[]
 ADMINS=[]
 if all([ADMIN_USER_NAME, ADMIN_USER_EMAIL]):
     # 500 errors are emailed to these users
-    # TODO check error of python manage.py sendtestemail --admin, it's not working as intended, might be my fault
     ADMINS +=[
         (f'{ADMIN_USER_NAME}', f'{ADMIN_USER_EMAIL}')
     ]
     MANAGERS=ADMINS
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
