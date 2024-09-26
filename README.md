@@ -4,10 +4,10 @@ Railway: https://railway.app/dashboard
 
 go to `https://saasapp-production-6fcd.up.railway.app/`
 a quick guide
-`https://www.codingforentrepreneurs.com/blog/deploy-django-on-railway-with-this-dockerfil`
+`https://www.codingforentrepreneurs.com/blog/deploy-django-on-railway-with-this-dockerfile`
 
 for the .env
-`https://www.codingforentrepreneurs.com/blog/create-a-one-off-django-secret-ke`
+`https://www.codingforentrepreneurs.com/blog/create-a-one-off-django-secret-key`
 and creating new django secret keys, if you want to change it every month.
 
 also for .env
@@ -43,6 +43,10 @@ DATABASE_URL="" # line 14
 # to create inside the folder you are in.
 - django-admin startproject cfehome.
 
+# User Email
+- you used pampita email.
+- you can test it with `python manage.py sendtestemail --admin`
+
 # TODO
  - read about context processors
 
@@ -52,3 +56,5 @@ DATABASE_URL="" # line 14
 
  - change whitenoise for Django-storage or S3  (after further research I might have to switch it to django-storage)
    Might look for D-S on dropbox since it sounds funny, no realiable, but funny.
+
+- another time we need to use our own custom domain name for gmails
