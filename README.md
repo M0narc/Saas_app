@@ -16,7 +16,7 @@ you can get the connection string there...
 
 # dotenv
 DJANGO_DEBUG= 0 o 1 # modify in railway
-DJANGO_SECRET_KEY='' # line 7
+DJANGO_SECRET_KEY='' # line 7  or `python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'`
 DATABASE_URL="" # line 14
 
 # Frotend

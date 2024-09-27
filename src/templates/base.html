@@ -9,6 +9,11 @@
 </head>
     <body>
         {% include 'nav/navbar.html' %}
+        {% if request.user.is_authenticated %}
+            You are a user
+        {% else %}
+        You are not a user
+        {% endif %}
         {% block content %}
         {% endblock content %}
         
