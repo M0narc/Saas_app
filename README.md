@@ -55,6 +55,13 @@ check the docs
 - you used pampita email.
 - you can test it with `python manage.py sendtestemail --admin`
 
+# Implemnented AllAuth for authentication
+- If you want to see all the new urls
+  just turn the settings.py
+  TEMPLATE section to False, navigate to some url and watch all the paths
+- `https://docs.allauth.org/en/latest/`
+- `https://github.com/danihodovic/django-allauth-u`
+
 # TODO
  - read about context processors
 
@@ -77,3 +84,5 @@ into the header and the script too, if it's not already there
   remember that piece of code.
 
 - Read `https://docs.djangoproject.com/en/dev/topics/email/#file-backend`
+
+- TEST WITH A NEW EMAIL AND CHECK EMAIL VERIFICATION
