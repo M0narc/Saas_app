@@ -29,6 +29,14 @@ DATABASE_URL="" # line 14
 - do NOT forget to add the paths to your `local-cdn` and `staticfiles/vendor`
   to your `.gitignore` if for some reason you didn' pull it in the git clone of this repo.
 - Whitenoise for content storage for prod, at least short term.
+- Make sure that the django-all-auth-ui is installed for it's own style
+
+# Login
+- We are using AllAuth for login, using the emails as primary(at first it will be username and email)
+check the docs
+`https://docs.allauth.org/en/latest/account/views.html`
+
+- `https://github.com/danihodovic/django-allauth-ui`
 
 # django commands
   - Why do we use a django manage.py command and not just a python module? well, as soon as you make it a command, you have access to everything inside settings.py.
@@ -47,6 +55,13 @@ DATABASE_URL="" # line 14
 - you used pampita email.
 - you can test it with `python manage.py sendtestemail --admin`
 
+# Implemnented AllAuth for authentication
+- If you want to see all the new urls
+  just turn the settings.py
+  TEMPLATE section to False, navigate to some url and watch all the paths
+- `https://docs.allauth.org/en/latest/`
+- `https://github.com/danihodovic/django-allauth-u`
+
 # TODO
  - read about context processors
 
@@ -58,3 +73,16 @@ DATABASE_URL="" # line 14
    Might look for D-S on dropbox since it sounds funny, no realiable, but funny.
 
 - another time we need to use our own custom domain name for gmails
+
+- implement in the allauth/layouts base.html the navbar and footer, you can import the link from our original base
+into the header and the script too, if it's not already there
+
+- `src/templates/base/messages.html` use the messages framework from django to let the user he loged in or out
+`https://docs.djangoproject.com/en/5.1/ref/contrib/messages/`
+
+  {% include 'base/messages.html' with messages=messages %} 
+  remember that piece of code.
+
+- Read `https://docs.djangoproject.com/en/dev/topics/email/#file-backend`
+
+- TEST WITH A NEW EMAIL AND CHECK EMAIL VERIFICATION
