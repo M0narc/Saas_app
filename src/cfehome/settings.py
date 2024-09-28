@@ -68,9 +68,13 @@ INSTALLED_APPS = [
     'visit',
     'management',
     # third-party-apps
+    'allauth_ui',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
+    'widget_tweaks',
+    'slippers',
 ]
 
 MIDDLEWARE = [
@@ -151,10 +155,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Django Allauth Config
 LOGIN_REDIRECT_URL = '/'
+# we can change the login method here
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+# you NEED to check your email verification
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_EMAIL_SUBJECT_PREFIX = '[CFE]'
 ACCOUNT_EMAIL_REQUIRED = True
+# UI theme
+ALLAUTH_UI_THEME = 'light'
 
 AUTHENTICATION_BACKENDS = [
     # ...
