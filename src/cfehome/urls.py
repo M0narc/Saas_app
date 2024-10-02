@@ -23,7 +23,7 @@ from .views import home_view, about_view
 # TODO must check how to properly redirect login and register since 
 # we have AllAuth now
 urlpatterns = [
-    path("", home_view),
+    path("", home_view, name='home'),
     path("register/", auth_views.register_view),
     path("login/", auth_views.login_view),
     path("about/", about_view),
