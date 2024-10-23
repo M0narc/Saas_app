@@ -176,7 +176,9 @@ AUTHENTICATION_BACKENDS = [
 
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
-    
+    'github': {
+        'VERIFIED_EMAIL': True,
+    }
 }
 
 # Internationalization

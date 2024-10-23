@@ -77,6 +77,8 @@ check the docs
 - implement in the allauth/layouts base.html the navbar and footer, you can import the link from our original base
 into the header and the script too, if it's not already there
 
+- Fix the django-allauth for github, right now it just throws a callback error, might be fixable after a downgrade.
+
 - `src/templates/base/messages.html` use the messages framework from django to let the user he loged in or out
 `https://docs.djangoproject.com/en/5.1/ref/contrib/messages/`
 
